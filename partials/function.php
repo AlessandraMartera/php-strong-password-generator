@@ -36,8 +36,7 @@
             if (!strstr($stringa, $carattere)) {
                 $stringa .= $carattere;
                 $i++;
-                }
-            
+            }
             }
             return $stringa;
 
