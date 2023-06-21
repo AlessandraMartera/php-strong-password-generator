@@ -7,10 +7,7 @@
 
     <?php 
       $length = $_GET['length'];
-      if ( $length > 0 ){
-      
-      }
-      
+     
     ?>
    
    
@@ -26,8 +23,14 @@
     <div>
         <?php 
         // echo "Nessun parametro inserito";
-        echo $length;
-        echo rand(0,15);
+        echo $length . "<br>"; 
+
+        for ($i=0; $i < $length ; $i++) { 
+        $num = rand( 0, 9);
+        echo  $num;
+        
+     }
+        
         ?>
     </div>
 
