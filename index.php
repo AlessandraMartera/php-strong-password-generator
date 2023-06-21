@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Password Generator</title>
 
     <?php 
+        session_start();
         $length = $_GET['length'];
 
         include './partials/function.php';
@@ -26,11 +27,14 @@
         <?php 
 
         if ( $length > 0) {
-            echo RandomPass($length);
+            $pass = RandomPass($length);
+            $_SESSION['pass'] = $pass;
+            header('Location: pass-page.php');
+
         } else {
             echo "Nessun parametro inserito";
         }
-;
+
         ?>
     </div>
 
