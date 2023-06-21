@@ -1,17 +1,18 @@
 
 <?php 
         include __DIR__ . '../index.php';
-        // $length = $_GET['length'];
+        
       
         function RandomPass($length){
         $caratteriPossibli = "";
 
-        $character = false;
-        $num = false;
-        $symbols = true;
+        $letter = $_GET['letter'];
+        $num =  $_GET['number'];
+        $symbols =  $_GET['symbols'];
 
-        if ($character || $num || $symbols ){
-            if ( $character ){
+        if ($letter || $num || $symbols ){
+            
+            if ( $letter ){
             $caratteriPossibli .= "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
             }
             if ( $num ) {

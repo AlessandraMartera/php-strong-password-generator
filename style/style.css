@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011a34;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #31455a;
+}
+
+h2 {
+    color: #fff;
+}
+
+.display {
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #8cceda;
+}
+
+.container {
+    text-align: start;
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: #fff;
+}
